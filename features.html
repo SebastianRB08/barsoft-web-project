@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f8f5">
+    <meta name="description" content="Explore Barsoft's sample sales, inventory, and team features.">
+    <title>Content and Features — Barsoft</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header"><nav class="navigation container" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Barsoft home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M8 5h16l-1.6 9.1a6.5 6.5 0 0 1-12.8 0L8 5Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M12 27h8M16 20v7M11 9h10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span><span>barsoft<span class="brand-period">.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open menu"><span></span><span></span></button>
+      <div class="navigation-menu" id="primary-menu"><a href="index.html">Home</a><a href="about.html">About</a><a href="structure.html">Structure</a><a href="features.html" aria-current="page">Features</a><a href="process.html">Process</a><a href="reflection.html">Reflection</a></div>
+    </nav></header>
+    <main class="container page-main">
+      <section class="content-page features-page">
+        <div class="page-intro">
+          <p class="eyebrow">04 / CONTENT AND FEATURES</p>
+          <h1 class="page-title">Useful tools for<br><span>everyday work.</span></h1>
+          <p class="page-lead">The project uses information, original visuals, navigation links, and a sample form to explain the Barsoft concept.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card feature-card-green"><span class="feature-icon">↗</span><p class="feature-number">SALES OVERVIEW</p><h2>See the daily picture.</h2><p>The dashboard preview uses a chart and summary cards to explain how sales information could be organized.</p><span class="feature-decoration sales-decoration" aria-hidden="true">╱╲╱╲╱</span></article>
+          <article class="feature-card feature-card-cream"><span class="feature-icon">▤</span><p class="feature-number">INVENTORY</p><h2>Keep stock in view.</h2><p>A sample stock summary shows how a team could check product availability at a glance.</p><span class="feature-decoration inventory-decoration" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span></article>
+          <article class="feature-card feature-card-dark"><span class="feature-icon">✳</span><p class="feature-number">TEAM WORK</p><h2>Keep everyone in sync.</h2><p>Team and shift information illustrates how a shared overview can support daily service.</p><span class="feature-decoration team-decoration" aria-hidden="true">✳</span></article>
+        </div>
+        <div class="feature-contact">
+          <div><strong>Try the sample demo form.</strong><span>It checks your entries in this browser. It does not send or store them.</span></div>
+          <button class="button button-dark demo-trigger" type="button">Open demo form <span aria-hidden="true">↗</span></button>
+        </div>
+        <a class="page-next-link" href="process.html">Next: Development Process <span aria-hidden="true">→</span></a>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><a class="brand brand-light" href="index.html"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M8 5h16l-1.6 9.1a6.5 6.5 0 0 1-12.8 0L8 5Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M12 27h8M16 20v7M11 9h10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span><span>barsoft<span class="brand-period">.</span></span></a><p>A student web development project.<br>Designed for hospitality teams.</p></div><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="structure.html">Structure</a><a href="features.html">Features</a><a href="process.html">Process</a><a href="reflection.html">Reflection</a></div></div><div class="container footer-bottom"><span>© <span id="current-year">2026</span> Barsoft student project.</span><span>Thank you for visiting. <b>✳</b></span></div></footer>
+    <dialog class="demo-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Close demo form">×</button>
+      <p class="eyebrow">SAMPLE INTERACTIVE FEATURE</p>
+      <h2 id="dialog-title">Barsoft demo request</h2>
+      <p class="dialog-description">Enter sample details to try the form. This student project does not send your information.</p>
+      <form class="demo-form">
+        <label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" placeholder="e.g., Alex Morgan" required>
+        <label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="alex@example.com" required>
+        <label for="business">Type of business</label>
+        <select id="business" name="business" required><option value="" disabled selected>Select an option</option><option>Restaurant</option><option>Bar</option><option>Café</option><option>Food truck</option><option>Other</option></select>
+        <button class="button button-dark form-submit" type="submit">Try the sample form <span aria-hidden="true">↗</span></button>
+        <p class="form-message" aria-live="polite"></p>
+      </form>
+      <p class="form-note">Demo only: your information stays in this browser session and is not submitted to a server.</p>
+    </dialog>
+  </body>
+</html>
